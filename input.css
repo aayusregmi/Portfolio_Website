@@ -1,0 +1,35 @@
+@import "tailwindcss";
+*{
+    box-sizing: border-box;
+}
+html , body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.slidebar-menu{
+    transform: translateX(150%);
+    transition: transform 0.3s ease;
+}
+.slidebar-menu.openSlide{
+    transform: translateX(0);
+}
+.myPhoto{
+    border-radius: 25%;
+    border: 3px solid black;
+}
+.myPhoto.removeBorder{
+    border: none;
+}
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.libre-baskerville-uniquifier{
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
