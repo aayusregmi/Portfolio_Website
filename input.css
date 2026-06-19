@@ -33,3 +33,6 @@ html , body{
   /* font-weight: <weight>; */
   font-style: normal;
 }
+.pr2{
+    background: linear-gradient(to top right ,blue , white);
+}
