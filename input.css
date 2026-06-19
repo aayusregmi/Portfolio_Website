@@ -15,10 +15,6 @@ html , body{
 .slidebar-menu.openSlide{
     transform: translateX(0);
 }
-.myPhoto{
-    border-radius: 25%;
-    border: 3px solid black;
-}
 .myPhoto.removeBorder{
     border: none;
 }
@@ -30,9 +26,43 @@ html , body{
 .libre-baskerville-uniquifier{
   font-family: "Libre Baskerville", serif;
   font-optical-sizing: auto;
-  /* font-weight: <weight>; */
   font-style: normal;
 }
-.pr2{
-    background: linear-gradient(to top right ,blue , white);
+.headline-info{
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: 700;
+}
+.project-showcase-text{
+    font-family: "Wendy One", sans-serif;
+}
+/* .skill{
+    font-family: "Chelsea Market";
+} */
+.skill:hover {
+box-shadow: 2px 1px 10px rgb(255, 230, 0);
+}
+.pro-text{
+    font-family: "Chelsea Market";
+}
+.skill{
+    font-weight: 600;
+}
+@media (max-width: 240px){
+    .project-showcase-text{
+        font-size: small;
+    }
+    .project-section-for-responsivens{
+        padding:3rem;
+    }
+    .skillShowcase{
+        margin-top: 0;
+    }
+    .pro-text{
+        font-size: small;
+    }
+}
+@media (min-width: 640px){
+    .slidebar-menu{
+        display: none;
+    }
 }

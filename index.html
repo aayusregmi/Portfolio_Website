@@ -3,6 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Portfolio_Website/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Portfolio_Website/Favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+</style>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+</style>
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
 </style>
@@ -14,33 +24,32 @@
 </head>
 <body class="bg-[#131C2B]">
   <nav>
-     <div class="bg-gray-800 w-screen h-14 flex items-center justify-between fixed ">
-        <div class="logo black-ops-one-regular text-white ml-2 text-xl">
+     <div class="bg-gray-800 w-screen h-14 flex items-center justify-between fixed z-10">
+        <div class="logo black-ops-one-regular text-white ml-2 text-2xl">
           Aayus Regmi
         </div>
-      <div class="menu-bar mr-3 sm:hidden">
+      <div class="menu-bar sm:hidden mr-4">
         <i class="fa-solid fa-bars-staggered" style="color: rgb(255, 255, 255);"></i>
       </div>
-      <div class="headline-info hidden text-white sm:flex ">
-        <ul class="flex gap-3">
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Skill</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Social Media</a></li>
+      <div class="headline-info hidden text-white mr-4 sm:flex text-xl">
+        <ul class="flex gap-8">
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#my-skill">Skill</a></li>
+          <li><a href="#my-project">Project</a></li>
+          <li><a href="#social-media">Social Media</a></li>
         </ul>
       </div>
       </div>
   </nav>
-  <div class="slidebar-menu bg-blue-50 w-35 text-xl fixed right-0 top-14">
+  <div class="slidebar-menu bg-blue-50 w-35 text-xl fixed right-0 top-14 z-10">
         <ul>
-          <li><i class="fas fa-user"></i><a href="#">About me</a></li>
-          <li><i class="fab fa-gripfire"></i><a href="#">Skill</a></li>
-          <li><i class="far fa-folder"></i><a href="#">Project</a></li>
-          <li><i class="far fa-comment"></i><a href="#">Social Media</a></li>
+          <li><i class="fas fa-user"></i><a href="#about-me">About me</a></li>
+          <li><i class="fab fa-gripfire"></i><a href="#my-skill">Skill</a></li>
+          <li><i class="far fa-folder"></i><a href="#my-project">Project</a></li>
+          <li><i class="far fa-comment"></i><a href="#social-media">Social Media</a></li>
         </ul>
       </div>
-
-  <section class="introduction w-screen libre-baskerville-uniquifier flex flex-col-reverse sm:flex-row pt-14 sm:justify-between ">
+  <section id="#about-me" class="introduction w-screen libre-baskerville-uniquifier flex flex-col-reverse sm:flex-row pt-14 sm:justify-between">
     <div class="mySelf  text-white pl-2 mt-6 text-xl sm:w-120 sm:ml-9 sm:pt-20 sm:text-2xl xl:w-[50%]">
        Hi I'm... <br>
        <h2 class="text-[#76CFD3] text-2xl font-bold sm:text-4xl">Aayus Regmi</h2>
@@ -52,23 +61,32 @@
       <img src="/Portfolio_Website/Aayus_for_Website_transparent_bg.png" alt="" class="w-100">
     </div>
   </section>
-  <section class="skillShowcase mt-5 flex flex-wrap gap-1.5 pl-2 h-16 items-center justify-center sm:justify-start xl:mt-2 xl:pl-8">
-     <h2 class="text-black bg-green-700 rounded-2xl w-28 text-center h-8">HTML</h2>
-     <h2 class="text-black bg-green-700 rounded-2xl w-28 text-center h-8">CSS</h2>
-     <h2 class="text-black bg-green-700 rounded-2xl w-28 text-center h-8">Java Script</h2>
-     <h2 class="text-black bg-green-700 rounded-2xl w-28 text-center h-8">Css Tailwind</h2>
+  <section id="my-skill" class="skillShowcase mt-5 flex flex-wrap gap-1.5 pl-2 h-16 items-center justify-center sm:justify-start xl:mt-1 xl:pl-8">
+     <h2 class="skill text-black bg-green-700 rounded-2xl w-28 text-center h-8 ">HTML</h2>
+     <h2 class="skill text-black bg-green-700 rounded-2xl w-28 text-center h-8 ">CSS</h2>
+     <h2 class="skill text-black bg-green-700 rounded-2xl w-28 text-center h-8 ">Java Script</h2>
+     <h2 class="skill text-black bg-green-700 rounded-2xl w-28 text-center h-8 ">Css Tailwind</h2>
+     <h2 class="skill text-black bg-green-700 rounded-2xl w-28 text-center h-8 ">Cooking.....</h2>
   </section>
-  <section class="mt-16 sm:w-[30]">
-  <div class="project w-full flex gap-2 flex-wrap justify-center items-center">
-     <div class="pr1 w-40 h-25 bg-amber-200 text-center rounded-xl flex items-center justify-center">Currency-Converter</div>
-     <div class="pr2 w-40 h-25 bg-amber-200 text-center rounded-xl flex items-center justify-center text-xl text-black font-bold">Real-time<br>Weather
+  <br>
+  <section id="my-project" class="project-section-for-responsivens mt-16 sm:w-[30]">
+    <h1 class= "project-showcase-text text-5xl text-center text-amber-600">Project Showcase</h1>
+  <div class="project w-full flex gap-2 flex-wrap justify-center items-center mt-4 text-xl">
+     <div class="pr1 pro-text w-40 h-25 bg-[#F0997B] text-center rounded-xl flex items-center justify-center">Currency-Converter</div>
+     <div class="pr2 pro-text w-40 h-25 text-center rounded-xl flex items-center justify-center text-xl  text-black bg-[#F0997B]">Real-time<br>Weather
      </div>
-     <div class="pr5 w-40 h-25 bg-amber-200 text-center rounded-xl flex items-center justify-center">To-do List</div>
-     <div class="pr6 w-40 h-25 bg-amber-200 text-center rounded-xl flex items-center justify-center">Calculator</div>
-     <div class="pr3 w-40 h-25 bg-amber-200 text-center rounded-xl flex items-center justify-center text-black font-bold">Tic-Tac-Toe<br>Game</div>
-     <div class="pr4 w-40 h-25 bg-amber-200 text-center rounded-xl flex items-center justify-center">Rock-Paper-Scissor Game</div>
+     <div class="pr5 pro-text w-40 h-25 bg-[#F0997B] text-center rounded-xl flex items-center justify-center">To-do List</div>
+     <div class="pr6  pro-text w-40 h-25 bg-[#F0997B] text-center rounded-xl flex items-center justify-center">Calculator</div>
+     <div class="pr3 pro-text w-40 h-25 bg-[#F0997B] text-center rounded-xl flex items-center justify-center text-black ">Tic-Tac-Toe<br>Game</div>
+     <div class="pr4 pro-text w-40 h-25 bg-[#F0997B] text-center rounded-xl flex items-center justify-center">Rock-Paper-Scissor Game</div>
   </div>
   </section>
+   <section id="social-media" class="social-Media"> 
+   <div class="media-container flex flex-col gap-2 mt-3">
+    <a href="https://github.com/aayusregmi"><i class="fa-brands fa-github" style="color: rgb(255, 255, 255);"></i></a>
+    <a href="https://www.linkedin.com/in/aayus-regmi-695718406/"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+   </div>
+   </section>
   <script src="script.js"></script>
 </body>
 </html>

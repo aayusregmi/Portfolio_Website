@@ -7,7 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-blue-50: oklch(97% 0.014 254.604);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -21,6 +21,8 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -192,6 +194,15 @@
   .right-0 {
     right: 0;
   }
+  .z-10 {
+    z-index: 10;
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -201,8 +212,8 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
-  .mr-3 {
-    margin-right: calc(var(--spacing) * 3);
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
@@ -243,6 +254,9 @@
   .w-screen {
     width: 100vw;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-col-reverse {
     flex-direction: column-reverse;
   }
@@ -264,8 +278,8 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -276,8 +290,8 @@
   .bg-\[\#131C2B\] {
     background-color: #131C2B;
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
+  .bg-\[\#F0997B\] {
+    background-color: #F0997B;
   }
   .bg-blue-50 {
     background-color: var(--color-blue-50);
@@ -301,6 +315,10 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -314,6 +332,9 @@
   }
   .text-\[\#76CFD3\] {
     color: #76CFD3;
+  }
+  .text-amber-600 {
+    color: var(--color-amber-600);
   }
   .text-black {
     color: var(--color-black);
@@ -381,9 +402,9 @@
       line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
-  .xl\:mt-2 {
+  .xl\:mt-1 {
     @media (width >= 80rem) {
-      margin-top: calc(var(--spacing) * 2);
+      margin-top: var(--spacing);
     }
   }
   .xl\:w-\[50\%\] {
@@ -413,10 +434,6 @@ html , body {
 .slidebar-menu.openSlide {
   transform: translateX(0);
 }
-.myPhoto {
-  border-radius: 25%;
-  border: 3px solid black;
-}
 .myPhoto.removeBorder {
   border: none;
 }
@@ -430,8 +447,40 @@ html , body {
   font-optical-sizing: auto;
   font-style: normal;
 }
-.pr2 {
-  background: linear-gradient(to top right ,blue , white);
+.headline-info {
+  font-family: 'Stick No Bills', sans-serif;
+  font-weight: 700;
+}
+.project-showcase-text {
+  font-family: "Wendy One", sans-serif;
+}
+.skill:hover {
+  box-shadow: 2px 1px 10px rgb(255, 230, 0);
+}
+.pro-text {
+  font-family: "Chelsea Market";
+}
+.skill {
+  font-weight: 600;
+}
+@media (max-width: 240px) {
+  .project-showcase-text {
+    font-size: small;
+  }
+  .project-section-for-responsivens {
+    padding: 3rem;
+  }
+  .skillShowcase {
+    margin-top: 0;
+  }
+  .pro-text {
+    font-size: small;
+  }
+}
+@media (min-width: 640px) {
+  .slidebar-menu {
+    display: none;
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
