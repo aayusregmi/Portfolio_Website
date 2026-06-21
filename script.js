@@ -4,4 +4,4 @@ const myPhoto = document.querySelector(".myPhoto")
 menu.addEventListener("click" , ()=>{
     slide_bar.classList.toggle("openSlide");
     myPhoto.classList.toggle("removeBorder");
-})
+}) 
